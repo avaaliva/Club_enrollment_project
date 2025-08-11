@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Student</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>✨ Student Registration</h2>
+    <form action="php/register_student.php" method="POST">
+      <input type="text" name="firstname" placeholder="✍️ First Name" required>
+      <input type="text" name="lastname" placeholder="✍️ Last Name" required>
+      <input type="text" id="student_id" name="student_id" placeholder="🆔 Student ID" required>
+      <input type="email" name="email" placeholder="📧 Email Address" required>
+      <select name="gender" required>
+        <option value="">👥 Select Gender</option>
+        <option value="M">👨 Male</option>
+        <option value="F">👩 Female</option>
+        <option value="O">🌈 Other</option>
+      </select>
+      <input type="text" name="department" placeholder="🏛️ Department" required>
+      <button type="submit">🚀 Register Now</button>
+    </form>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>

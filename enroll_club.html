@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enroll in Club</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🎯 Enroll in Clubs</h2>
+    <div class="form-container">
+      <form action="enroll_club.php" method="POST">
+        <label for="student_id">🆔 Student ID:</label>
+        <input type="text" id="student_id" name="student_id" placeholder="Enter your Student ID" required>
+
+        <label>🎭 Select Your Clubs:</label>
+        <div class="club-grid">
+          <div class="club-item">
+            <label class="checkbox-label">
+              <input type="checkbox" name="clubs[]" value="Dance"> 💃 Dance Club
+            </label>
+          </div>
+          <div class="club-item">
+            <label class="checkbox-label">
+              <input type="checkbox" name="clubs[]" value="Music"> 🎵 Music Club
+            </label>
+          </div>
+          <div class="club-item">
+            <label class="checkbox-label">
+              <input type="checkbox" name="clubs[]" value="Drama"> 🎭 Drama Club
+            </label>
+          </div>
+          <div class="club-item">
+            <label class="checkbox-label">
+              <input type="checkbox" name="clubs[]" value="Sports"> ⚽ Sports Club
+            </label>
+          </div>
+          <div class="club-item">
+            <label class="checkbox-label">
+              <input type="checkbox" name="clubs[]" value="Photography"> 📸 Photography Club
+            </label>
+          </div>
+          <div class="club-item">
+            <label class="checkbox-label">
+              <input type="checkbox" name="clubs[]" value="Art"> 🎨 Art Club
+            </label>
+          </div>
+        </div>
+
+        <button type="submit">🎉 Enroll Now</button>
+      </form>
+    </div>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>
